@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string"
+    },
+    "classroom_id": {
+      "type": "string"
+    },
+    "school_id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Present",
+        "Absent",
+        "Late",
+        "Excused"
+      ]
+    },
+    "subject_id": {
+      "type": "string"
+    },
+    "teacher_id": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "parent_notified": {
+      "type": "boolean"
+    },
+    "check_in_time": {
+      "type": "string"
+    },
+    "check_out_time": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Attendance"
+}

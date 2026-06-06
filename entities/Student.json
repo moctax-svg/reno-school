@@ -1,0 +1,97 @@
+{
+  "type": "object",
+  "properties": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "string",
+      "format": "date"
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+    "school_id": {
+      "type": "string"
+    },
+    "classroom_id": {
+      "type": "string"
+    },
+    "academic_year_id": {
+      "type": "string"
+    },
+    "registration_number": {
+      "type": "string",
+      "description": "Matricule unique global \u2014 conserv\u00e9 m\u00eame en cas de transfert"
+    },
+    "enrollment_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Inactive",
+        "Graduated",
+        "Transferred"
+      ]
+    },
+    "photo_url": {
+      "type": "string"
+    },
+    "parent_name": {
+      "type": "string"
+    },
+    "parent_phone": {
+      "type": "string"
+    },
+    "parent_email": {
+      "type": "string"
+    },
+    "parent_address": {
+      "type": "string"
+    },
+    "wallet_balance": {
+      "type": "number",
+      "description": "Solde du portefeuille \u00e9l\u00e8ve (cantine, transport, activit\u00e9s)"
+    },
+    "wallet_total_credited": {
+      "type": "number",
+      "description": "Total cr\u00e9dit\u00e9 depuis la cr\u00e9ation du compte"
+    },
+    "origin_school_id": {
+      "type": "string",
+      "description": "Premier \u00e9tablissement d'inscription"
+    },
+    "previous_school_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Historique des \u00e9tablissements fr\u00e9quent\u00e9s"
+    },
+    "transfer_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date du dernier transfert inter-\u00e9tablissement"
+    },
+    "transfer_notes": {
+      "type": "string",
+      "description": "Motif / notes du transfert"
+    },
+    "national_id": {
+      "type": "string",
+      "description": "Num\u00e9ro d'identit\u00e9 nationale (pour liaison inter-sites)"
+    }
+  },
+  "required": [],
+  "name": "Student"
+}

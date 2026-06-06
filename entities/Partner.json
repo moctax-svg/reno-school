@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "school_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Restaurant",
+        "Transport",
+        "M\u00e9dical",
+        "Librairie",
+        "Sport",
+        "Autre"
+      ]
+    },
+    "contact_name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "logo_url": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Actif",
+        "Inactif"
+      ]
+    },
+    "rating": {
+      "type": "number"
+    },
+    "zone": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Partner"
+}

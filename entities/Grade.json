@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string"
+    },
+    "subject_id": {
+      "type": "string"
+    },
+    "classroom_id": {
+      "type": "string"
+    },
+    "teacher_id": {
+      "type": "string"
+    },
+    "school_id": {
+      "type": "string"
+    },
+    "academic_year_id": {
+      "type": "string"
+    },
+    "trimester": {
+      "type": "string"
+    },
+    "exam_type": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number"
+    },
+    "max_score": {
+      "type": "number"
+    },
+    "date": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "string"
+    },
+    "appreciation": {
+      "type": "string",
+      "enum": [
+        "",
+        "Acquis",
+        "En cours d'acquisition",
+        "Non acquis",
+        "Tr\u00e8s bien",
+        "Bien",
+        "Assez bien",
+        "Passable",
+        "Insuffisant"
+      ]
+    },
+    "credits": {
+      "type": "number"
+    },
+    "ue_code": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Grade"
+}

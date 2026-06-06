@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "school_id": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "diagnosis": {
+      "type": "string"
+    },
+    "treatment": {
+      "type": "string"
+    },
+    "nurse_name": {
+      "type": "string"
+    },
+    "action_taken": {
+      "type": "string",
+      "enum": [
+        "Soins sur place",
+        "Renvoy\u00e9 \u00e0 domicile",
+        "Hospitalis\u00e9",
+        "Orient\u00e9 m\u00e9decin",
+        "Observation"
+      ]
+    },
+    "parent_notified": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "MedicalVisit"
+}

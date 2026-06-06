@@ -1,0 +1,32 @@
+import { createClient } from '@base44/sdk';
+
+const base44 = createClient({ appId: "6a10490017772f69e69305fa" });
+
+export const School = base44.entities.School;
+export const AcademicYear = base44.entities.AcademicYear;
+export const Classroom = base44.entities.Classroom;
+export const Teacher = base44.entities.Teacher;
+export const Student = base44.entities.Student;
+export const Subject = base44.entities.Subject;
+export const Schedule = base44.entities.Schedule;
+export const Attendance = base44.entities.Attendance;
+export const Grade = base44.entities.Grade;
+export const Fee = base44.entities.Fee;
+export const Notification = base44.entities.Notification;
+export const Event = base44.entities.Event;
+export const SecurityLog = base44.entities.SecurityLog;
+export const Homework = base44.entities.Homework;
+export const HomeworkRead = base44.entities.HomeworkRead;
+export const Message = base44.entities.Message;
+export const Partner = base44.entities.Partner;
+export const MealOrder = base44.entities.MealOrder;
+export const TransportRide = base44.entities.TransportRide;
+export const TransportBooking = base44.entities.TransportBooking;
+export const MedicalRecord = base44.entities.MedicalRecord;
+export const MedicalVisit = base44.entities.MedicalVisit;
+export const User = base44.entities.User;
+export const WalletTransaction = base44.entities.WalletTransaction;
+export const TransferRecord = base44.entities.TransferRecord;
+export const Discount = base44.entities.Discount;
+export { base44 };
+export const AbsenceReport = base44.entities.AbsenceReport;

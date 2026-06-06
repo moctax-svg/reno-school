@@ -1,0 +1,104 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "subject_id": {
+      "type": "string"
+    },
+    "teacher_id": {
+      "type": "string"
+    },
+    "classroom_id": {
+      "type": "string"
+    },
+    "school_id": {
+      "type": "string"
+    },
+    "due_date": {
+      "type": "string"
+    },
+    "assigned_date": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Devoir maison",
+        "Le\u00e7on \u00e0 apprendre",
+        "Exercice",
+        "Projet",
+        "Expos\u00e9",
+        "Module de cours",
+        "Autre"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Expired",
+        "Draft"
+      ]
+    },
+    "notify_parents": {
+      "type": "boolean"
+    },
+    "notify_students": {
+      "type": "boolean"
+    },
+    "reminder_sent": {
+      "type": "boolean"
+    },
+    "attachment_type": {
+      "type": "string",
+      "enum": [
+        "none",
+        "file",
+        "photo",
+        "reference"
+      ],
+      "description": "Type de pi\u00e8ce jointe"
+    },
+    "attachment_url": {
+      "type": "string",
+      "description": "URL fichier ou photo upload\u00e9e"
+    },
+    "reference_book": {
+      "type": "string",
+      "description": "Nom du livre de r\u00e9f\u00e9rence"
+    },
+    "reference_page": {
+      "type": "string",
+      "description": "Page(s) du livre"
+    },
+    "reference_exercise": {
+      "type": "string",
+      "description": "Num\u00e9ro(s) d'exercice"
+    },
+    "course_level": {
+      "type": "string",
+      "enum": [
+        "Primaire",
+        "Coll\u00e8ge",
+        "Lyc\u00e9e",
+        "Universit\u00e9",
+        "Autre"
+      ],
+      "description": "Niveau pour modules de cours t\u00e9l\u00e9chargeables"
+    },
+    "is_course_module": {
+      "type": "boolean",
+      "description": "true = module de cours t\u00e9l\u00e9chargeable"
+    },
+    "attachments": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Homework"
+}

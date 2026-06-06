@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "school_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "Exam",
+        "R\u00e9union",
+        "F\u00eate",
+        "Sortie scolaire",
+        "Sport",
+        "Autre"
+      ]
+    },
+    "start_date": {
+      "type": "string"
+    },
+    "end_date": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "target_audience": {
+      "type": "string",
+      "enum": [
+        "All",
+        "Students",
+        "Teachers",
+        "Parents",
+        "Specific Class"
+      ]
+    },
+    "classroom_id": {
+      "type": "string"
+    },
+    "notify_parents": {
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "name": "Event"
+}

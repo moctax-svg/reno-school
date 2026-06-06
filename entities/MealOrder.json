@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "properties": {
+    "school_id": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    },
+    "classroom_id": {
+      "type": "string"
+    },
+    "partner_id": {
+      "type": "string"
+    },
+    "menu_items": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "meal_type": {
+      "type": "string",
+      "enum": [
+        "D\u00e9jeuner",
+        "Go\u00fbter",
+        "Petit-d\u00e9jeuner"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "En attente",
+        "Confirm\u00e9",
+        "Livr\u00e9",
+        "Annul\u00e9"
+      ]
+    },
+    "amount": {
+      "type": "number"
+    },
+    "payment_status": {
+      "type": "string",
+      "enum": [
+        "Non pay\u00e9",
+        "Pay\u00e9"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "ordered_by": {
+      "type": "string"
+    },
+    "group_order_id": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "MealOrder"
+}

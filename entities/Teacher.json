@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "school_id": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "hire_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Inactive",
+        "On Leave"
+      ]
+    },
+    "photo_url": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Teacher"
+}

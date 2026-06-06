@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "properties": {
+    "school_id": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    },
+    "parent_name": {
+      "type": "string"
+    },
+    "parent_email": {
+      "type": "string"
+    },
+    "parent_phone": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Absence",
+        "Retard",
+        "Note",
+        "Paiement",
+        "Ev\u00e9nement",
+        "Comportement",
+        "Bulletin",
+        "General"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "string",
+      "enum": [
+        "Email",
+        "SMS",
+        "Push",
+        "WhatsApp"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Sent",
+        "Pending",
+        "Failed"
+      ]
+    },
+    "sent_at": {
+      "type": "string"
+    },
+    "read_at": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Notification"
+}

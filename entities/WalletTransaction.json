@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string"
+    },
+    "school_id": {
+      "type": "string",
+      "description": "Site o\u00f9 la transaction a \u00e9t\u00e9 effectu\u00e9e"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "credit",
+        "debit",
+        "transfer_in",
+        "transfer_out",
+        "refund"
+      ],
+      "description": "Type de transaction"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "balance_after": {
+      "type": "number",
+      "description": "Solde apr\u00e8s transaction"
+    },
+    "label": {
+      "type": "string",
+      "description": "Libell\u00e9 de la transaction (ex: Recharge cantine, Paiement repas)"
+    },
+    "reference": {
+      "type": "string",
+      "description": "R\u00e9f\u00e9rence / num\u00e9ro re\u00e7u"
+    },
+    "payment_method": {
+      "type": "string",
+      "enum": [
+        "Esp\u00e8ces",
+        "Mobile Money",
+        "Virement",
+        "Carte",
+        "Autre"
+      ]
+    },
+    "from_school_id": {
+      "type": "string",
+      "description": "En cas de transfert inter-site : \u00e9tablissement source"
+    },
+    "to_school_id": {
+      "type": "string",
+      "description": "En cas de transfert inter-site : \u00e9tablissement destination"
+    },
+    "done_by": {
+      "type": "string",
+      "description": "Nom du caissier / admin qui a effectu\u00e9 la transaction"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [],
+  "name": "WalletTransaction"
+}

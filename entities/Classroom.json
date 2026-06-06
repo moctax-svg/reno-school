@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "school_id": {
+      "type": "string"
+    },
+    "academic_year_id": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string"
+    },
+    "capacity": {
+      "type": "number"
+    },
+    "main_teacher_id": {
+      "type": "string"
+    },
+    "cycle": {
+      "type": "string",
+      "enum": [
+        "Cr\u00e8che",
+        "Maternelle",
+        "Primaire",
+        "Coll\u00e8ge",
+        "Lyc\u00e9e",
+        "Sup\u00e9rieur"
+      ]
+    },
+    "section": {
+      "type": "string"
+    },
+    "room": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Classroom"
+}

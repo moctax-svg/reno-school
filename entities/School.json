@@ -1,0 +1,122 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "group_id": {
+      "type": "string",
+      "description": "ID du groupe scolaire parent (si \u00e9tablissement membre d'un r\u00e9seau)"
+    },
+    "is_group": {
+      "type": "boolean",
+      "description": "True si cet enregistrement est un groupe/r\u00e9seau d'\u00e9coles"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "logo_url": {
+      "type": "string"
+    },
+    "director_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Inactive"
+      ]
+    },
+    "slogan": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "academic_year_label": {
+      "type": "string"
+    },
+    "header_color": {
+      "type": "string"
+    },
+    "footer_text": {
+      "type": "string"
+    },
+    "stamp_url": {
+      "type": "string"
+    },
+    "school_cycles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Cr\u00e8che",
+          "Maternelle",
+          "Primaire",
+          "Coll\u00e8ge",
+          "Lyc\u00e9e",
+          "Institut/Universit\u00e9"
+        ]
+      },
+      "description": "Cycles actifs dans cet \u00e9tablissement (multi-s\u00e9lection)"
+    },
+    "school_type": {
+      "type": "string",
+      "enum": [
+        "Cr\u00e8che",
+        "Maternelle",
+        "Primaire",
+        "Coll\u00e8ge",
+        "Lyc\u00e9e",
+        "Institut/Universit\u00e9",
+        "Multi-cycles"
+      ],
+      "description": "Cycle principal (legacy / compatibilit\u00e9)"
+    },
+    "grading_system": {
+      "type": "string",
+      "enum": [
+        "Aucune note",
+        "Acquis/En cours/Non acquis",
+        "Note sur 10",
+        "Note sur 20",
+        "Cr\u00e9dits/UE"
+      ]
+    },
+    "period_type": {
+      "type": "string",
+      "enum": [
+        "Trimestre",
+        "Semestre",
+        "Ann\u00e9e"
+      ]
+    },
+    "has_homework": {
+      "type": "boolean"
+    },
+    "has_schedule": {
+      "type": "boolean"
+    },
+    "has_canteen": {
+      "type": "boolean"
+    },
+    "has_transport": {
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "name": "School"
+}

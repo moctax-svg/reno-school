@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "school_id": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    },
+    "person_name": {
+      "type": "string"
+    },
+    "person_type": {
+      "type": "string",
+      "enum": [
+        "Student",
+        "Teacher",
+        "Parent",
+        "Visitor",
+        "Staff"
+      ]
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "Entry",
+        "Exit"
+      ]
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "gate": {
+      "type": "string"
+    },
+    "authorized_by": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "photo_url": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "SecurityLog"
+}

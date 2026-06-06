@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "properties": {
+    "school_id": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    },
+    "blood_type": {
+      "type": "string",
+      "enum": [
+        "A+",
+        "A-",
+        "B+",
+        "B-",
+        "AB+",
+        "AB-",
+        "O+",
+        "O-",
+        "Inconnu"
+      ]
+    },
+    "allergies": {
+      "type": "string"
+    },
+    "chronic_conditions": {
+      "type": "string"
+    },
+    "medications": {
+      "type": "string"
+    },
+    "emergency_contact": {
+      "type": "string"
+    },
+    "emergency_phone": {
+      "type": "string"
+    },
+    "doctor_name": {
+      "type": "string"
+    },
+    "doctor_phone": {
+      "type": "string"
+    },
+    "insurance": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "last_checkup": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "MedicalRecord"
+}

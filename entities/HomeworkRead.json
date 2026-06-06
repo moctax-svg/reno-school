@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "homework_id": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    },
+    "parent_phone": {
+      "type": "string"
+    },
+    "reader_type": {
+      "type": "string",
+      "enum": [
+        "student",
+        "parent"
+      ]
+    },
+    "read_at": {
+      "type": "string"
+    },
+    "opened_at": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "HomeworkRead"
+}

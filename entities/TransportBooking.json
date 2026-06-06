@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "school_id": {
+      "type": "string"
+    },
+    "ride_id": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    },
+    "parent_name": {
+      "type": "string"
+    },
+    "parent_phone": {
+      "type": "string"
+    },
+    "pickup_address": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "En attente",
+        "Confirm\u00e9",
+        "Annul\u00e9"
+      ]
+    },
+    "amount": {
+      "type": "number"
+    },
+    "payment_status": {
+      "type": "string",
+      "enum": [
+        "Non pay\u00e9",
+        "Pay\u00e9"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "trip_date": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "TransportBooking"
+}

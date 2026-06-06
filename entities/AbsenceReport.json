@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string"
+    },
+    "school_id": {
+      "type": "string"
+    },
+    "classroom_id": {
+      "type": "string"
+    },
+    "parent_name": {
+      "type": "string"
+    },
+    "parent_phone": {
+      "type": "string"
+    },
+    "report_type": {
+      "type": "string",
+      "enum": [
+        "Absence",
+        "Retard"
+      ],
+      "description": "Type de signalement"
+    },
+    "reason": {
+      "type": "string",
+      "description": "Motif (maladie, urgence familiale, rendez-vous m\u00e9dical, autre)"
+    },
+    "reason_detail": {
+      "type": "string",
+      "description": "Pr\u00e9cision libre du motif"
+    },
+    "date": {
+      "type": "string",
+      "description": "Date concern\u00e9e"
+    },
+    "expected_return": {
+      "type": "string",
+      "description": "Heure de retour estim\u00e9e pour les retards"
+    },
+    "duration_days": {
+      "type": "integer",
+      "description": "Dur\u00e9e estim\u00e9e en jours pour les absences"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Acknowledged",
+        "Closed"
+      ],
+      "description": "Statut du signalement"
+    },
+    "acknowledged_by": {
+      "type": "string",
+      "description": "Nom du staff qui a pris en charge"
+    },
+    "acknowledged_at": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notes internes de l'\u00e9cole"
+    },
+    "notified_teacher": {
+      "type": "boolean"
+    },
+    "notified_admin": {
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "name": "AbsenceReport"
+}

@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "sender_role": {
+      "type": "string",
+      "enum": [
+        "parent",
+        "teacher",
+        "admin"
+      ]
+    },
+    "sender_name": {
+      "type": "string"
+    },
+    "sender_email": {
+      "type": "string"
+    },
+    "recipient_role": {
+      "type": "string",
+      "enum": [
+        "parent",
+        "teacher",
+        "admin"
+      ]
+    },
+    "recipient_name": {
+      "type": "string"
+    },
+    "recipient_id": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    },
+    "student_name": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "thread_id": {
+      "type": "string"
+    },
+    "is_read": {
+      "type": "boolean"
+    },
+    "parent_message_id": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "Normal",
+        "Urgent"
+      ]
+    }
+  },
+  "required": [],
+  "name": "Message"
+}

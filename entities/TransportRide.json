@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "properties": {
+    "school_id": {
+      "type": "string"
+    },
+    "driver_type": {
+      "type": "string",
+      "enum": [
+        "Parent",
+        "Priv\u00e9",
+        "Coursier"
+      ]
+    },
+    "driver_name": {
+      "type": "string"
+    },
+    "driver_phone": {
+      "type": "string"
+    },
+    "driver_id": {
+      "type": "string"
+    },
+    "vehicle_type": {
+      "type": "string",
+      "enum": [
+        "Voiture",
+        "Van",
+        "Bus",
+        "Moto",
+        "Autre"
+      ]
+    },
+    "vehicle_capacity": {
+      "type": "number"
+    },
+    "zone": {
+      "type": "string"
+    },
+    "route_description": {
+      "type": "string"
+    },
+    "departure_time": {
+      "type": "string"
+    },
+    "return_time": {
+      "type": "string"
+    },
+    "days": {
+      "type": "string"
+    },
+    "price_per_student": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Disponible",
+        "Complet",
+        "Inactif"
+      ]
+    },
+    "ride_type": {
+      "type": "string",
+      "enum": [
+        "Quotidien",
+        "Sortie scolaire",
+        "Ponctuel"
+      ]
+    },
+    "trip_date": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "TransportRide"
+}

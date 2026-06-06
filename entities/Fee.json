@@ -1,0 +1,112 @@
+{
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string"
+    },
+    "school_id": {
+      "type": "string"
+    },
+    "academic_year_id": {
+      "type": "string"
+    },
+    "fee_type": {
+      "type": "string",
+      "enum": [
+        "Scolarit\u00e9",
+        "Inscription",
+        "Transport",
+        "Cantine",
+        "Activit\u00e9s",
+        "Uniforme",
+        "Autre"
+      ]
+    },
+    "amount_due": {
+      "type": "number"
+    },
+    "amount_paid": {
+      "type": "number"
+    },
+    "due_date": {
+      "type": "string"
+    },
+    "payment_date": {
+      "type": "string"
+    },
+    "payment_method": {
+      "type": "string",
+      "enum": [
+        "Esp\u00e8ces",
+        "Mobile Money",
+        "Orange Money",
+        "Wave",
+        "Moov Money",
+        "Virement",
+        "Carte",
+        "Wallet",
+        "Autre"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Paid",
+        "Partial",
+        "Unpaid",
+        "Overdue",
+        "Waived",
+        "Transferred"
+      ]
+    },
+    "payment_status": {
+      "type": "string",
+      "enum": [
+        "PendingValidation",
+        "Validated"
+      ],
+      "description": "Statut de validation du paiement cash d\u00e9clar\u00e9 par le parent"
+    },
+    "pending_amount": {
+      "type": "number",
+      "description": "Montant d\u00e9clar\u00e9 par le parent, en attente de validation"
+    },
+    "pending_receipt": {
+      "type": "string",
+      "description": "N\u00b0 re\u00e7u soumis par le parent, \u00e0 v\u00e9rifier"
+    },
+    "pending_date": {
+      "type": "string",
+      "description": "Date de d\u00e9claration du paiement en attente"
+    },
+    "pending_notes": {
+      "type": "string",
+      "description": "Note du parent pour le paiement en attente"
+    },
+    "receipt_number": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "installment_plan_id": {
+      "type": "string",
+      "description": "ID du plan d'\u00e9ch\u00e9ancier associ\u00e9"
+    },
+    "installment_month": {
+      "type": "number",
+      "description": "Num\u00e9ro de la tranche (1 \u00e0 6)"
+    },
+    "is_transferred": {
+      "type": "boolean"
+    },
+    "origin_school_id": {
+      "type": "string"
+    },
+    "cycle": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Fee"
+}

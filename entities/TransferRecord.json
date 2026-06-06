@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string"
+    },
+    "from_school_id": {
+      "type": "string"
+    },
+    "to_school_id": {
+      "type": "string"
+    },
+    "from_classroom_id": {
+      "type": "string"
+    },
+    "to_classroom_id": {
+      "type": "string"
+    },
+    "transfer_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "reason": {
+      "type": "string",
+      "enum": [
+        "D\u00e9m\u00e9nagement",
+        "Changement de cycle",
+        "Raison familiale",
+        "Raison m\u00e9dicale",
+        "Exclusion",
+        "Autre"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "wallet_transferred": {
+      "type": "number",
+      "description": "Solde du portefeuille transf\u00e9r\u00e9 vers le nouveau site"
+    },
+    "fees_carried_over": {
+      "type": "boolean",
+      "description": "Les frais d\u00e9j\u00e0 pay\u00e9s sont pris en compte dans le nouveau site"
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected",
+        "Completed"
+      ]
+    },
+    "documents_url": {
+      "type": "string",
+      "description": "URL du bulletin / dossier de transfert g\u00e9n\u00e9r\u00e9"
+    }
+  },
+  "required": [],
+  "name": "TransferRecord"
+}
